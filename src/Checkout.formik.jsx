@@ -48,7 +48,7 @@ export default function Checkout() {
   return (
     <Formik
       initialValues={emptyAddress}
-      // validate={getErrors}           // Uncomment this to use our existing validation logic instead
+      validate={getErrors}           // Uncomment this to use our existing validation logic instead
       validationSchema={checkoutSchema} // Using YUP for validation
       onSubmit={handleSubmit}
     >
